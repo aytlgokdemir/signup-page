@@ -1,1 +1,3 @@
 # signup-page
+
+![](signup.gif)
