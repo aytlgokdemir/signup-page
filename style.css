@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(#43c6ac,#191654);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 430px;
+    height: 520px;
+    background: rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    position: relative;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, .15);
+    transform: rotate(-6deg);
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.logo{
+    margin-bottom: 2rem;    
+    text-align: center;
+}
+
+.logo img{
+    width: 80px;  
+    margin-top: 20px; 
+}
+
+.sign-in{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.sign-in p{
+    margin-top: 8px;
+}
+
+form{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+form input{
+    margin-top: 15px;
+}
+
+form a{
+    text-decoration: none;
+    color: #3d3998;
+    margin-left: 60px;
+}
+
+form a:hover{
+    text-decoration: underline;
+}
+
+.signup-box{
+    position: relative;
+}
+
+.fa-regular{
+    position: absolute;
+    top: 1.4rem;
+    left: 4rem;
+    font-size: 1.3rem;
+    opacity: .4;
+}
+
+.fa-solid{
+    position: absolute;
+    top: 6rem;
+    left: 4rem;
+    font-size: 1.3rem;
+    opacity: .4;
+}
+
+.container .input-box[type="email"], 
+.container .input-box[type="password"]{
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, .3);
+    padding: 0.7rem;
+    padding-left: calc(1rem * 3.5);
+    border-radius: 20px;
+    width: 85%;
+    transition: background .5s;
+} 
+
+button{
+    width: 85%;
+    background: black;
+    color: white;
+    font-family: sans-serif;
+    padding: 0.5rem;
+    border-radius: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;  
+    border: none;  
+}
+
+button:hover{
+    color: #000;
+    background: white;
+    transition: 0.5s;
+    border: none;
+}
+
+form p{
+    font-size: 13px;
+}
